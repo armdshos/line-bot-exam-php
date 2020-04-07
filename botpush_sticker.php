@@ -13,10 +13,10 @@ $accessToken = "IKtQS7iWe72sF7u0/a6PpFVxuuiXnZ0Nc864Q8wd+U7dRaqpMjLeRXk/8A1QWQAH
    //if($message == "สวัสดี"){
       $arrayPostData['to'] = $id;
       $arrayPostData['messages'][0]['type'] = "text";
-      $arrayPostData['messages'][0]['text'] = "สวัสดีจ้าาา";
+      $arrayPostData['messages'][0]['text'] = "สวัสดีครับ สั่งสินค้าอะไรดี";
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
-      $arrayPostData['messages'][1]['stickerId'] = "34";
+      $arrayPostData['messages'][1]['stickerId'] = "35";
       pushMsg($arrayHeader,$arrayPostData);
    //}
    function pushMsg($arrayHeader,$arrayPostData){

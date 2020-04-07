@@ -24,9 +24,8 @@ $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
 $dateData=time(); // วันเวลาขณะนั้น
-$date_show_th = 'เวลาปัจจุบัน :'.thai_date_and_time($dateData);
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($date_show_th);
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($dateData);
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();

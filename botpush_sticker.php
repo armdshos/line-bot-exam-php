@@ -1,12 +1,12 @@
 <?php
 $accessToken = "IKtQS7iWe72sF7u0/a6PpFVxuuiXnZ0Nc864Q8wd+U7dRaqpMjLeRXk/8A1QWQAHQLqPuTQj2XC8hWvjJDV5XMvtIlClUpSj0DPKuepgqJsWHwRFl9BHBrvxP6g9PVWnVJyMra6tTGOZK9wWrPP0rwdB04t89/1O/w1cDnyilFU=";
-   $content = file_get_contents('php://input');
-   $arrayJson = json_decode($content, true);
+   //$content = file_get_contents('php://input');
+   //$arrayJson = json_decode($content, true);
    $arrayHeader = array();
    $arrayHeader[] = "Content-Type: application/json";
    $arrayHeader[] = "Authorization: Bearer {$accessToken}";
    //รับข้อความจากผู้ใช้
-   $message = $arrayJson['events'][0]['message']['text'];
+   $message = 'สวัสดี';//$arrayJson['events'][0]['message']['text'];
    //รับ id ของผู้ใช้
    $id = 'Ud4d744beed535713bb7f605ca0e1eba6';//$arrayJson['events'][0]['source']['userId'];
    #ตัวอย่าง Message Type "Text + Sticker"

@@ -12,10 +12,10 @@ $accessToken = "IKtQS7iWe72sF7u0/a6PpFVxuuiXnZ0Nc864Q8wd+U7dRaqpMjLeRXk/8A1QWQAH
    #ตัวอย่าง Message Type "Text + Sticker"
    //if($message == "สวัสดี"){
       $arrayPostData['to'] = $id;
-      $arrayPostData['messages'][0]['type'] = "image";
-      $arrayPostData['messages'][0]['originalContentUrl'] = "https://youant.net/green/images/48412313_558355137924389_6011670775092740096_n.jpg";
-      //$arrayPostData['messages'][1]['type'] = "sticker";
-      //$arrayPostData['messages'][1]['packageId'] = "2";
+      $arrayPostData['messages'][0]['type'] = "text";
+      $arrayPostData['messages'][0]['text'] = "รูปโลโก้";
+      $arrayPostData['messages'][1]['type'] = "image";
+      $arrayPostData['messages'][1]['originalContentUrl'] = "https://youant.net/green/images/48412313_558355137924389_6011670775092740096_n.jpg";
       //$arrayPostData['messages'][1]['stickerId'] = "35";
       pushMsg($arrayHeader,$arrayPostData);
    //}

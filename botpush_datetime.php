@@ -11,7 +11,7 @@ $pushID = 'Ud4d744beed535713bb7f605ca0e1eba6';
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
-$dateData=time(); // วันเวลาขณะนั้น
+$dateData=date('d-m-y'); // วันเวลาขณะนั้น
 
 $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($dateData);
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
